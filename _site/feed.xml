@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Browser Security Enhancements</title>
+    <description>The browsers are currently implementing lots of changes day by day. We will be listing changes relevant to security enhancements which known browsers have implemented recently. Such security updates are aimed to be updated on regular intervals.
+</description>
+    <link>http://127.0.0.1:4000/</link>
+    <atom:link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 13 May 2021 18:46:28 +0530</pubDate>
+    <lastBuildDate>Thu, 13 May 2021 18:46:28 +0530</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Referrer Leakage Prevention</title>
+        <description>&lt;h2 id=&quot;description&quot;&gt;Description&lt;/h2&gt;
+&lt;p&gt;Referrer Policy is used to prevent referer header leakage. Chrome has changed a referrer policy defaults and is now using “strict-origin-when-cross-origin” as the default policy, instead of “no-referrer-when-downgrade”. On cross-origin requests made from the web page without a referrer policy set on it, default configuration of Chrome will set “strict-origin-when-cross-origin” and prevent the Referer header leakage by disclosing initiating origin only instead of full URL.&lt;/p&gt;
+
+&lt;h2 id=&quot;browsers&quot;&gt;Browser(s)&lt;/h2&gt;
+&lt;p&gt;Chrome 85+&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;Reference(s)&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 10 May 2021 18:26:06 +0530</pubDate>
+        <link>http://127.0.0.1:4000/security/updates/2021/05/10/Referrer-Leakage-Prevention.html</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000/security/updates/2021/05/10/Referrer-Leakage-Prevention.html</guid>
+        
+        
+        <category>Security</category>
+        
+        <category>Updates</category>
+        
+      </item>
+    
+      <item>
+        <title>Tabnabbing Protection</title>
+        <description>&lt;h2 id=&quot;description&quot;&gt;Description&lt;/h2&gt;
+&lt;p&gt;Reverse tabnabbing is an attack where an attacker can link a malicious page on the target application. The browsers recently added Tabnabbing protection and no longer allows access to the properties of “windows.opener”. As browsers prevent Tabnabbing vulnerability and do not disclose “windows.opener” information to the opener page, this shows a NULL response. We can say that the browsers eliminated the Tabnabbing vulnerability by securing opener information Additionally, if you want to opt out from Tabnabbing prevention, the web pages can use rel=”opener”.&lt;/p&gt;
+
+&lt;h2 id=&quot;browsers&quot;&gt;Browser(s)&lt;/h2&gt;
+&lt;p&gt;Chrome 88+&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;Reference(s)&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.chromestatus.com/features/6140064063029248&quot;&gt;Anchor target=_blank implies rel=noopener by default&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 10 May 2021 18:25:06 +0530</pubDate>
+        <link>http://127.0.0.1:4000/security/updates/2021/05/10/Tabnabbing-Protection.html</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000/security/updates/2021/05/10/Tabnabbing-Protection.html</guid>
+        
+        
+        <category>Security</category>
+        
+        <category>Updates</category>
+        
+      </item>
+    
+      <item>
+        <title>Welcome to Browser Security Enhancements!</title>
+        <description>&lt;p&gt;The browsers are currently implementing lots of changes day by day. We will be listing changes relevant to security enhancements which known browsers have implemented recently. To name a few, we will be discussing about the changes such as Tabnabbing protection, Referrer Leakage Preventions, HTTPS-Only mode, X-XSS-Protection and Cookie related security enhancement which can be used to prevent Client-Side vulnerabilities such as Cross-Site Scripting and Cross-Site Request Forgery. Security updates are aimed to be updated on regular intervals.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 10 May 2021 18:23:06 +0530</pubDate>
+        <link>http://127.0.0.1:4000/welcome/2021/05/10/Welcome-to-Browser-Security-Enhancements.html</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000/welcome/2021/05/10/Welcome-to-Browser-Security-Enhancements.html</guid>
+        
+        
+        <category>Welcome</category>
+        
+      </item>
+    
+  </channel>
+</rss>

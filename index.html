@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<div class="home">
+
+<h1 class="page-heading">Browser Security Enhancements List</h1>
+<hr/>
+<table class="table table-striped table-hover ">
+  <thead>
+    <tr>
+      <!--<th>ID</th>-->
+      <th>Title</th>
+      <th>Description</th>
+	  <th>Browser(s)</th>
+	  <!--<th>Reference(s)</th>-->
+    </tr>
+  </thead>
+  <tbody>
+  {% for post in site.categories["Security"] %}
+    <tr>
+      <!--<td>{{ forloop.index }}</td>-->
+      <td><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></td> <!--- class="post-link"-->
+	  <td>{{ post.description}}</td>
+	  <td>{{ post.browsers}}</td>
+	  <!--<td>{{ post.references}}</td>-->
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+</div>
+
+<!--<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>-->
