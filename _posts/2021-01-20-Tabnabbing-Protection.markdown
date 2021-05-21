@@ -22,14 +22,18 @@ The following list of properties can be accessed by a malicious application:
 
 However, the browsers recently added Tabnabbing protection and no longer allows access to the properties mentioned above. To prove it let’s see an example mentioned below:
 
+```
 <a target="_blank" href="https://attacker.com">Click Here! </a>
+```
 
 As browsers prevent Tabnabbing vulnerability and do not disclose “windows.opener” information to opener page, this shows a NULL response. 
 
 So, we can say that the browsers eliminated the Tabnabbing vulnerability by securing opener information. 
 Additionally, if you want to opt out from Tabnabbing prevention, the web pages can use rel="opener" as shown below:
 
+```
 <a target="_blank" href="https://notsosecure.com" rel="opener">Click!</a>
+```
 
 ## Browser(s) 
 * Chrome 88+

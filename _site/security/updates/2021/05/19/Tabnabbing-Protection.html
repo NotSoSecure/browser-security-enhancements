@@ -78,14 +78,16 @@
 
 <p>However, the browsers recently added Tabnabbing protection and no longer allows access to the properties mentioned above. To prove it let’s see an example mentioned below:</p>
 
-<p><a target="_blank" href="https://attacker.com">Click Here! </a></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a target="_blank" href="https://attacker.com"&gt;Click Here! &lt;/a&gt;
+</code></pre></div></div>
 
 <p>As browsers prevent Tabnabbing vulnerability and do not disclose “windows.opener” information to opener page, this shows a NULL response.</p>
 
 <p>So, we can say that the browsers eliminated the Tabnabbing vulnerability by securing opener information. 
 Additionally, if you want to opt out from Tabnabbing prevention, the web pages can use rel=”opener” as shown below:</p>
 
-<p><a target="_blank" href="https://notsosecure.com" rel="opener">Click!</a></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a target="_blank" href="https://notsosecure.com" rel="opener"&gt;Click!&lt;/a&gt;
+</code></pre></div></div>
 
 <h2 id="browsers">Browser(s)</h2>
 <ul>

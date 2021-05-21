@@ -6,8 +6,8 @@
 </description>
     <link>http://127.0.0.1:4000/</link>
     <atom:link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 21 May 2021 19:31:05 +0530</pubDate>
-    <lastBuildDate>Fri, 21 May 2021 19:31:05 +0530</lastBuildDate>
+    <pubDate>Fri, 21 May 2021 19:43:13 +0530</pubDate>
+    <lastBuildDate>Fri, 21 May 2021 19:43:13 +0530</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -111,14 +111,16 @@
 
 &lt;p&gt;However, the browsers recently added Tabnabbing protection and no longer allows access to the properties mentioned above. To prove it let’s see an example mentioned below:&lt;/p&gt;
 
-&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://attacker.com&quot;&gt;Click Here! &lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;a target=&quot;_blank&quot; href=&quot;https://attacker.com&quot;&amp;gt;Click Here! &amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;As browsers prevent Tabnabbing vulnerability and do not disclose “windows.opener” information to opener page, this shows a NULL response.&lt;/p&gt;
 
 &lt;p&gt;So, we can say that the browsers eliminated the Tabnabbing vulnerability by securing opener information. 
 Additionally, if you want to opt out from Tabnabbing prevention, the web pages can use rel=”opener” as shown below:&lt;/p&gt;
 
-&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://notsosecure.com&quot; rel=&quot;opener&quot;&gt;Click!&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;a target=&quot;_blank&quot; href=&quot;https://notsosecure.com&quot; rel=&quot;opener&quot;&amp;gt;Click!&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;browsers&quot;&gt;Browser(s)&lt;/h2&gt;
 &lt;ul&gt;
