@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Browser Security Enhancements!"
-date:   2021-05-10 18:23:06 +0530
+date:   2021-05-11 18:23:06 +0530
 categories: Welcome
 published:	true 
 ---

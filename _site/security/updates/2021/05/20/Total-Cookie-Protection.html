@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>About</title>
-  <meta name="description" content="The browsers are currently implementing lots of changes day by day. We will be listing changes relevant to security enhancements which known browsers have implemented recently. Such security updates are aimed to be updated on regular intervals.
-">
+  <title>Total Cookie protection in Firefox</title>
+  <meta name="description" content="DescriptionTotal Cookie Protection creates a separate “cookie jar” for each website the users visit in Firefox. Any time a website, or third-party content em...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://127.0.0.1:4000/about/">
+  <link rel="canonical" href="http://127.0.0.1:4000/security/updates/2021/05/20/Total-Cookie-Protection.html">
   <link rel="alternate" type="application/rss+xml" title="Browser Security Enhancements" href="http://127.0.0.1:4000/feed.xml">
 </head>
 
@@ -55,20 +54,44 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <article class="post">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title">About</h1>
+    <h1 class="post-title" itemprop="name headline">Total Cookie protection in Firefox</h1>
+    <p class="post-meta"><time datetime="2021-05-20T11:45:20+05:30" itemprop="datePublished">May 20, 2021</time></p>
   </header>
 
-  <div class="post-content">
-    <p>The browsers are currently implementing lots of changes day by day. We will be listing changes relevant to security enhancements which known browsers have implemented recently. To name a few, we will be discussing about the changes such as Tabnabbing protection, Referrer Leakage Preventions, HTTPS-Only mode, X-XSS-Protection and Cookie related security enhancement which can be used to prevent Client-Side vulnerabilities such as Cross-Site Scripting and Cross-Site Request Forgery. Security updates are aimed to be updated on regular intervals.</p>
+  <div class="post-content" itemprop="articleBody">
+    <h2 id="description">Description</h2>
+<p>Total Cookie Protection creates a separate “cookie jar” for each website the users visit in Firefox. Any time a website, or third-party content embedded in a website, deposits a cookie in your browser, that cookie is confined to the cookie jar assigned to that website, such that it is not allowed to be shared with any other website. For example, if the user accesses the website “www.notsosecure.com”, and it contains third party contents from “api.thirdpartycontents.com”. The browser will create a “cookie jar” and store both cookies “www.notsosecure.com” and “api.thirdpartycontents.com” to the “cookie jar” of “www.notsosecure.com” - the first web application which users accessed. If the user accesses another application which uses any of the above applications, the browser will not use the cookie and create a new cookie jar for each application the user visits.</p>
+
+<p>How will this affect normal users? The applications which support Sign in with Google, Facebook or any other applications will not allow to access the applications directly with the existing cookies. Instead of this, the applications will ask users to sign again to their provider and use the cookies separately.</p>
+
+<p>Addtionally, Enhanced Tracking Protection is the default setting for Firefox users and will block the following trackers:</p>
+<ul>
+  <li>Cross-site cookies</li>
+  <li>Social media trackers</li>
+  <li>Cryptominers</li>
+  <li>Tracking content in private windows</li>
+  <li>Fingerprinters</li>
+</ul>
+
+<h2 id="browsers">Browser(s)</h2>
+<ul>
+  <li>Firefox 86+</li>
+</ul>
+
+<h2 id="references">Reference(s)</h2>
+<ul>
+  <li><a href="https://blog.mozilla.org/security/2021/02/23/total-cookie-protection/">Total Cookie Protection in Firefox</a></li>
+</ul>
 
   </div>
 
 </article>
 
-Access the <a href=http://127.0.0.1:4000>Listing page</a> now. 
+<br/>
+<a href=http://127.0.0.1:4000>Back to listing page</a>
       </div>
     </div>
 

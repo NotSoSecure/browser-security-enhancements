@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>About</title>
-  <meta name="description" content="The browsers are currently implementing lots of changes day by day. We will be listing changes relevant to security enhancements which known browsers have implemented recently. Such security updates are aimed to be updated on regular intervals.
-">
+  <title>Referrer Leakage Prevention</title>
+  <meta name="description" content="DescriptionReferrer Policy is used to prevent referer header leakage. Chrome has changed a referrer policy defaults and is now using “strict-origin-when-cros...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://127.0.0.1:4000/about/">
+  <link rel="canonical" href="http://127.0.0.1:4000/security/updates/2021/05/16/Referrer-Leakage-Prevention.html">
   <link rel="alternate" type="application/rss+xml" title="Browser Security Enhancements" href="http://127.0.0.1:4000/feed.xml">
 </head>
 
@@ -55,20 +54,40 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <article class="post">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title">About</h1>
+    <h1 class="post-title" itemprop="name headline">Referrer Leakage Prevention</h1>
+    <p class="post-meta"><time datetime="2021-05-16T18:26:06+05:30" itemprop="datePublished">May 16, 2021</time></p>
   </header>
 
-  <div class="post-content">
-    <p>The browsers are currently implementing lots of changes day by day. We will be listing changes relevant to security enhancements which known browsers have implemented recently. To name a few, we will be discussing about the changes such as Tabnabbing protection, Referrer Leakage Preventions, HTTPS-Only mode, X-XSS-Protection and Cookie related security enhancement which can be used to prevent Client-Side vulnerabilities such as Cross-Site Scripting and Cross-Site Request Forgery. Security updates are aimed to be updated on regular intervals.</p>
+  <div class="post-content" itemprop="articleBody">
+    <h2 id="description">Description</h2>
+<p>Referrer Policy is used to prevent referer header leakage. Chrome has changed a referrer policy defaults and is now using “strict-origin-when-cross-origin” as the default policy, instead of “no-referrer-when-downgrade”. On cross-origin requests made from the web page without a referrer policy set on it, default configuration of Chrome will set “strict-origin-when-cross-origin” and prevent the Referer header leakage by disclosing initiating origin only instead of full URL.</p>
+
+<p>Let’s take an example, Cross-origin request, sent from https://notsosecure.com/user/profile?email=test9@notsosecure.com to https://notsosecureapp.com/:</p>
+
+<p>Previous default settings: “no-referrer-when-downgrade”, the Referer header with value “https://notsosecure.com/user/profile?email=test9@notsosecure.com” will be sent.</p>
+
+<p>Now in Chrome 85+ with default settings “strict-origin-when-cross-origin”, the Referer header with value “https://notsosecure.com” will be sent.</p>
+
+<h2 id="browsers">Browser(s)</h2>
+<ul>
+  <li>Chrome 85+</li>
+</ul>
+
+<h2 id="references">Reference(s)</h2>
+<ul>
+  <li><a href="https://www.chromestatus.com/features/6140064063029248">Referrer Policy: Default to strict-origin-when-cross-origin
+</a></li>
+</ul>
 
   </div>
 
 </article>
 
-Access the <a href=http://127.0.0.1:4000>Listing page</a> now. 
+<br/>
+<a href=http://127.0.0.1:4000>Back to listing page</a>
       </div>
     </div>
 

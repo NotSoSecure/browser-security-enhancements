@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>About</title>
-  <meta name="description" content="The browsers are currently implementing lots of changes day by day. We will be listing changes relevant to security enhancements which known browsers have implemented recently. Such security updates are aimed to be updated on regular intervals.
-">
+  <title>Tabnabbing Protection</title>
+  <meta name="description" content="DescriptionReverse tabnabbing is an attack where an attacker can link a malicious page on the target application. The malicious page is able to rewrite the t...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://127.0.0.1:4000/about/">
+  <link rel="canonical" href="http://127.0.0.1:4000/security/updates/2021/05/19/Tabnabbing-Protection.html">
   <link rel="alternate" type="application/rss+xml" title="Browser Security Enhancements" href="http://127.0.0.1:4000/feed.xml">
 </head>
 
@@ -55,20 +54,56 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <article class="post">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title">About</h1>
+    <h1 class="post-title" itemprop="name headline">Tabnabbing Protection</h1>
+    <p class="post-meta"><time datetime="2021-05-19T18:25:06+05:30" itemprop="datePublished">May 19, 2021</time></p>
   </header>
 
-  <div class="post-content">
-    <p>The browsers are currently implementing lots of changes day by day. We will be listing changes relevant to security enhancements which known browsers have implemented recently. To name a few, we will be discussing about the changes such as Tabnabbing protection, Referrer Leakage Preventions, HTTPS-Only mode, X-XSS-Protection and Cookie related security enhancement which can be used to prevent Client-Side vulnerabilities such as Cross-Site Scripting and Cross-Site Request Forgery. Security updates are aimed to be updated on regular intervals.</p>
+  <div class="post-content" itemprop="articleBody">
+    <h2 id="description">Description</h2>
+<p>Reverse tabnabbing is an attack where an attacker can link a malicious page on the target application. The malicious page is able to rewrite the target application, for example to replace it with a phishing site. As the user was originally on the correct page they are less likely to notice that it has been changed with a phishing site, especially if the site looks the same as the target. If the user authenticates to this phishing site then their credentials (or other sensitive data) are sent to the phishing site rather than the legitimate one.</p>
+
+<p>The following list of properties can be accessed by a malicious application:</p>
+<ul>
+  <li>opener.closed: Returns a boolean value indicating whether a window has been closed or not.</li>
+  <li>opener.frames: Returns all iframe elements in the current window.</li>
+  <li>opener.length: Returns the number of iframe elements in the current window.</li>
+  <li>opener.opener: Returns a reference to the window that created the window.</li>
+  <li>opener.parent: Returns the parent window of the current window.</li>
+  <li>opener.self: Returns the current window.</li>
+  <li>opener.top: Returns the topmost browser window.</li>
+</ul>
+
+<p>However, the browsers recently added Tabnabbing protection and no longer allows access to the properties mentioned above. To prove it let’s see an example mentioned below:</p>
+
+<p><a target="_blank" href="https://attacker.com">Click Here! </a></p>
+
+<p>As browsers prevent Tabnabbing vulnerability and do not disclose “windows.opener” information to opener page, this shows a NULL response.</p>
+
+<p>So, we can say that the browsers eliminated the Tabnabbing vulnerability by securing opener information. 
+Additionally, if you want to opt out from Tabnabbing prevention, the web pages can use rel=”opener” as shown below:</p>
+
+<p><a target="_blank" href="https://notsosecure.com" rel="opener">Click!</a></p>
+
+<h2 id="browsers">Browser(s)</h2>
+<ul>
+  <li>Chrome 88+</li>
+</ul>
+
+<h2 id="references">Reference(s)</h2>
+<ul>
+  <li><a href="https://www.chromestatus.com/features/6140064063029248">Anchor target=_blank implies rel=noopener by default</a></li>
+  <li><a href="https://html.spec.whatwg.org/#following-hyperlinks">HTML Updates - Following hyperlinks</a></li>
+</ul>
 
   </div>
 
 </article>
 
-Access the <a href=http://127.0.0.1:4000>Listing page</a> now. 
+<br/>
+<a href=http://127.0.0.1:4000>Back to listing page</a>
       </div>
     </div>
 

@@ -1,7 +1,7 @@
 # Site settings
 title: Browser Security Enhancements
 companytitle: NotSoSecure
-email: savan@notsosecure.com
+email: info@notsosecure.com
 description: > # this means to ignore newlines until "baseurl:"
   The browsers are currently implementing lots of changes day by day. We will be listing changes relevant to security enhancements which known browsers have implemented recently. Such security updates are aimed to be updated on regular intervals.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -14,14 +14,11 @@ github_username:  notsosecure
 markdown: kramdown
 future: true
 
-credit-name1: Name 1
-credit-email1: savan@notsosecure.com 
+credit-name1: Akshay Sudan
+credit-link1: https://twitter.com/akshay_asc11
 
-credit-name2: Name 2
-credit-email2: savan@notsosecure.com 
+credit-name2: Dharmendra Gupta
+credit-link2: https://twitter.com/ItsDg4u
 
-credit-name3: Name 3
-credit-email3: savan@notsosecure.com 
-
-credit-name4: Name 4
-credit-email4: savan@notsosecure.com 
+credit-name3: Savan Gadhiya
+credit-link3: https://twitter.com/gadhiyasavan

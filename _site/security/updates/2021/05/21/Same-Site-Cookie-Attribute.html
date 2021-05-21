@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>About</title>
-  <meta name="description" content="The browsers are currently implementing lots of changes day by day. We will be listing changes relevant to security enhancements which known browsers have implemented recently. Such security updates are aimed to be updated on regular intervals.
-">
+  <title>Same-Site Cookie Attribute</title>
+  <meta name="description" content="DescriptionSame-Site attribute can be used to prevent Cross-Site Request Forgery attacks. Browsers will not transmit the Same-Site cookie attribute if access...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://127.0.0.1:4000/about/">
+  <link rel="canonical" href="http://127.0.0.1:4000/security/updates/2021/05/21/Same-Site-Cookie-Attribute.html">
   <link rel="alternate" type="application/rss+xml" title="Browser Security Enhancements" href="http://127.0.0.1:4000/feed.xml">
 </head>
 
@@ -55,20 +54,53 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <article class="post">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title">About</h1>
+    <h1 class="post-title" itemprop="name headline">Same-Site Cookie Attribute</h1>
+    <p class="post-meta"><time datetime="2021-05-21T13:15:00+05:30" itemprop="datePublished">May 21, 2021</time></p>
   </header>
 
-  <div class="post-content">
-    <p>The browsers are currently implementing lots of changes day by day. We will be listing changes relevant to security enhancements which known browsers have implemented recently. To name a few, we will be discussing about the changes such as Tabnabbing protection, Referrer Leakage Preventions, HTTPS-Only mode, X-XSS-Protection and Cookie related security enhancement which can be used to prevent Client-Side vulnerabilities such as Cross-Site Scripting and Cross-Site Request Forgery. Security updates are aimed to be updated on regular intervals.</p>
+  <div class="post-content" itemprop="articleBody">
+    <h2 id="description">Description</h2>
+<p>Same-Site attribute can be used to prevent Cross-Site Request Forgery attacks. Browsers will not transmit the Same-Site cookie attribute if access from cross-origin which means we can prevent the Cross-Site Request Forgery attacks. However, an attacker can still use Cross-Site Scripting vulnerability and perform chaining attack to execute Cross-Site Request Forgery attack.</p>
+
+<p>We discussed how the Same-Site cookie attribute works. Now, let’s understand it with respect to Chrome and Firefox browsers. Same-Site cookie attribute supports 3 values Lax, Strict and None:</p>
+
+<ul>
+  <li>Lax: Same-Site cookies marked with Lax are not sent on the cross-site requests, i.e. load images or frames into a third party application. However, it is being sent when a user is navigating to the site by following a link from the application.</li>
+  <li>Strict: Same-Site cookies marked with Strict will only be sent on first requests and not being sent with the requests originating by third party applications.</li>
+  <li>None: Same-Site cookies marked with None will not be sent to both first requests and cross-origin requests. However, if the application sets Same-Site with None, it is required to set a Secure attribute which makes sure that cookie will not be transferred over an unencrypted HTTP channel.</li>
+</ul>
+
+<p>The browsers consider Lax as the default value if Same-Site attribute is not present for the particular cookie. This will ensure that Cross-Site Request Forgery will not be allowed when an attacker attempts to execute it by request from an attacker controlled application.</p>
+
+<p>Following is the list of browsers which supports Same-Site attribute(as of 25 February 2021):</p>
+<ul>
+  <li>Chrome 51, Some features are updated from Chrome 84</li>
+  <li>Firefox 60</li>
+  <li>Edge 16</li>
+  <li>Opera 39</li>
+  <li>Safari 13 on macOS 10.15 Catalina</li>
+</ul>
+
+<h2 id="browsers">Browser(s)</h2>
+<ul>
+  <li>Chrome 84+</li>
+  <li>Firefox 60+</li>
+</ul>
+
+<h2 id="references">Reference(s)</h2>
+<ul>
+  <li><a href="https://www.chromium.org/updates/same-site/test-debug">Same-Site attribure</a></li>
+</ul>
 
   </div>
 
 </article>
 
-Access the <a href=http://127.0.0.1:4000>Listing page</a> now. 
+<br/>
+<a href=http://127.0.0.1:4000>Back to listing page</a>
       </div>
     </div>
 
