@@ -10,7 +10,12 @@ The browsers are currently implementing lots of changes day by day. We will be l
 
 This porject was started by:
 * [Akshay Sudan](https://twitter.com/akshay_asc11)
-* [Savan Gadhiya](https://twitter.com/gadhiyasavan)
 * [Dharmedra Gupta](https://twitter.com/ItsDg4u)
+* [Savan Gadhiya](https://twitter.com/gadhiyasavan)
 
-Public Contributors will be listed below
+Special thanks for continuous guidance:
+* [Rohit Salecha](https://twitter.com/salecharohit)
+* [Sandeep Singh](https://twitter.com/Sandy1sm)
+* [Anant Shrivastava](https://twitter.com/anantshri)
+
+Public Contributors will be listed below. 
