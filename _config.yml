@@ -4,7 +4,7 @@ companytitle: NotSoSecure
 email: info@notsosecure.com
 description: > # this means to ignore newlines until "baseurl:"
   The browsers are currently implementing lots of changes day by day. We will be listing changes relevant to security enhancements which known browsers have implemented recently. Such security updates are aimed to be updated on regular intervals.
-baseurl: "/browser-security-enhancements/" # the subpath of your site, e.g. /blog
+baseurl: "/browser-security-enhancements" # the subpath of your site, e.g. /blog
 url: "https://notsosecure.github.io" # the base hostname & protocol for your site
 companyurl: "https://www.notsosecure.com"
 twitter_username: notsosecure
