@@ -8,7 +8,8 @@ description: Same-Site attribute can be used to prevent Cross-Site Request Forge
 browsers: Chrome 84+, Firefox 60+
 ---
 
-## Description 
+## Description
+
 Same-Site attribute can be used to prevent Cross-Site Request Forgery attacks. Browsers will not transmit the Same-Site cookie attribute if access from cross-origin which means we can prevent the Cross-Site Request Forgery attacks. However, an attacker can still use Cross-Site Scripting vulnerability and perform chaining attack to execute Cross-Site Request Forgery attack.
 
 We discussed how the Same-Site cookie attribute works. Now, let's understand it with respect to Chrome and Firefox browsers. Same-Site cookie attribute supports 3 values Lax, Strict and None:
@@ -31,4 +32,5 @@ Following is the list of browsers which supports Same-Site attribute(as of 25 Fe
 * Firefox 60+
 
 ## Reference(s)
-* [Same-Site attribure](https://www.chromium.org/updates/same-site/test-debug)
+* [Mozilla Documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#SameSite_cookies)
+* [Same-Site attribute](https://www.chromium.org/updates/same-site/test-debug)
