@@ -22,3 +22,4 @@ future: true
 
 # credit-name3: Savan Gadhiya
 # credit-link3: https://twitter.com/gadhiyasavan
+permalink: /:title:output_ext
