@@ -280,3 +280,19 @@ only screen and (max-width: 760px),
   td:nth-of-type(2):before { content: "Description"; }
   td:nth-of-type(3):before { content: "Browser(s)"; }
 }
+
+
+/* negative link with red */
+a#downgrade {
+    color: red;
+    text-decoration: none;
+
+    &:visited {
+        color: darken(red, 15%);
+    }
+
+    &:hover {
+        color: $text-color;
+        text-decoration: underline;
+    }
+}

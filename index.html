@@ -6,7 +6,7 @@ layout: default
 
 <h1>Browser Security Enhancement Tracker Project</h1>
 <div>
-  We are slowly moving our lives from desktop applications to browser based application and browsers have become an integral part of our life. Current top browsers have a special focus on security and have been working on many major security projects to kill bug classes. Some are ambitious projects some are smaller tweaks. Some continue to become the core of the browser some projects get shelved or discarded.
+  We are slowly moving our lives from desktop applications to browser based applications and browsers have become an integral part of our life. Current top browsers have a special focus on security and have been working on many major security projects to kill bug classes. Some are ambitious projects, some are smaller tweaks. Some continue to become the core of the browser, some projects get shelved or discarded.
 </div>
 <br />
 <div>
@@ -30,7 +30,15 @@ layout: default
   {% for post in site.categories["Security"] %}
     <tr>
       <!--<td>{{ forloop.index }}</td>-->
-      <td><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></td> <!--- class="post-link"-->
+      <td>
+      {% if post.downgrade %}
+        {% if post.downgrade == true %}
+          <a id="downgrade" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <!--- class="post-link"-->  
+        {% endif  %}
+      {% else %}
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <!--- class="post-link"-->
+      {% endif %}
+      </td>
 	  <td>{{ post.description}}</td>
 	  <td>{{ post.browsers}}</td>
 	  <!--<td>{{ post.references}}</td>-->
@@ -39,6 +47,11 @@ layout: default
   </tbody>
 </table>
 
+</div>
+
+<br />
+<div>
+  This is an ongoing effort and more details will be added over time. Contributions are welcome via <a href="" target="_blank">github issues / pull requests</a>
 </div>
 
 <!--<div class="home">
