@@ -8,7 +8,7 @@ The browsers are currently implementing lots of changes day by day. We will be l
 
 ## Project Contributors 
 
-This porject was started by:
+This project was started by:
 * [Akshay Sudan](https://twitter.com/akshay_asc11)
 * [Dharmedra Gupta](https://twitter.com/ItsDg4u)
 * [Savan Gadhiya](https://twitter.com/gadhiyasavan)

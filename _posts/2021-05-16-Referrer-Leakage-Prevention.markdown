@@ -22,4 +22,4 @@ Now in Chrome 85+ with default settings "strict-origin-when-cross-origin", the R
 
 ## Reference(s)
 * [Referrer Policy: Default to strict-origin-when-cross-origin
-](https://www.chromestatus.com/features/6140064063029248)
+](https://www.chromestatus.com/features/6251880185331712)
